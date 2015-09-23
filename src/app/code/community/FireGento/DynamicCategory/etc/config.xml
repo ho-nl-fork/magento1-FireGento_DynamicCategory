@@ -62,6 +62,16 @@
                 </catalog_category_product>
             </indexer>
         </index>
+        <events>
+            <fastsimpleimport_reindex_products_before_category_indexer_product>
+                <observers>
+                    <dynamiccategory>
+                        <class>dynamiccategory/cron</class>
+                        <method>updateCategories</method>
+                    </dynamiccategory>
+                </observers>
+            </fastsimpleimport_reindex_products_before_category_indexer_product>
+        </events>
         <resources>
             <dynamiccategory_setup>
                 <setup>
