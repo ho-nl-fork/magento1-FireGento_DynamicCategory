@@ -26,7 +26,7 @@
  * @package  FireGento_DynamicCategory
  * @author   FireGento Team <team@firegento.com>
  */
-class FireGento_DynamicCategory_DynamicController
+class FireGento_DynamicCategory_Adminhtml_DynamicController
     extends Mage_Adminhtml_Controller_Action
 {
     /**
@@ -58,5 +58,13 @@ class FireGento_DynamicCategory_DynamicController
         }
 
         $this->getResponse()->setBody($html);
+    }
+
+    /**
+     * @return bool
+     */
+    protected function _isAllowed()
+    {
+        return true;
     }
 }
